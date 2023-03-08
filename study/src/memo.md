@@ -25,3 +25,21 @@ SPA - 페이지는 index.html 하나지만 파일 내에 있는 내용만 바꿔
 index.js
 리액트의 기본 세팅
 HTML과 JS를 연결해주는 브릿지(index.html 파일과 App.js를 연결)
+
+props 예제(최상위 컴포넌트 내에서 Import 받은 하위 컴포넌트로 상태값 전달)
+      <Box name="리사" num={1} />
+      <Box name="제니" num={2} />
+      <Box name="지수" num={3} />
+
+리액트가 리액트인 이유 ?
+1. 리액트 내 에서는 string값을 제외하고 {}를 씀
+2. 리액트는 state에만 반응함(일반 js문법으로는 반응하지 않음)
+ex) let counter = 0;
+    const increase = () => {
+    return counter + 1;
+  }
+3. 값이 변하면 UI가 업데이트 되게 함
+하지만 변수가 많아질 경우를 대비해 State가 나옴 
+state가 변하면 UI를 바뀌게 함(재렌더링)
+set 함수는 비동기적으로 작동함 (바뀌는데 걸리는시간)
+일반 변수는 재랜더링 될때마다 전부 초기값으로 바뀜
