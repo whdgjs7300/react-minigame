@@ -13,12 +13,18 @@ function App() {
 
   return (
     <div>
-      
-      
+      <div className='main'>
+      <Box title="you" />
+      <Box title="computer" />
+      </div> 
+      <div className='main'>
+        <button type="">가위</button>
+        <button type="">바위</button>
+        <button type="">보</button>
+      </div>
 
-      
-
-    </div> 
+    </div>
+    
     
     
   );

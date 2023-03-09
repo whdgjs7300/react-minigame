@@ -4,13 +4,10 @@ const  Box= (props) => {
 
 
     return ( 
-        <div>
-            <div className = "box">
-                Box{props.num}
-            <p>{props.name}</p>
-            
-            </div>
-
+        <div className="box">
+            <h1>{props.title}</h1>
+            <img className="item-img" src="https://masflex.com.ph/wp-content/uploads/2020/09/HI-426.png" alt="" />
+            <h2>Win</h2>
         </div>
     );
 }
