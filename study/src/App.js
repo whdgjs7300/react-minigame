@@ -29,7 +29,11 @@ function App() {
   // 인자값으로 버튼을 구분시킴 
   // 리액트에서 플레이 함수를 () 쓰면 즉시 실행시키기 때문애 콜백함수로 넣어줘야함
   // UI 화면이 보여지자 마자 버튼을 클릭하지 않았는데도 실행되는 것을 방지
+
+  const [userSelect, setUserSelect]= useState(null);
+
   const play = (userChoice) => {
+    setUserSelect(choice[userChoice])
 
   }
 
@@ -37,7 +41,7 @@ function App() {
   return (
     <div>
       <div className='main'>
-      <Box title="you" />
+      <Box title="you" item={userSelect} />
       <Box title="computer" />
       </div> 
       <div className='main'>
