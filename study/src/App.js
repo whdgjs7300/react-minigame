@@ -31,18 +31,27 @@ function App() {
   // UI 화면이 보여지자 마자 버튼을 클릭하지 않았는데도 실행되는 것을 방지
 
   const [userSelect, setUserSelect]= useState(null);
+  const [computerSelect, setComputerSelect] = useState(null);
 
   const play = (userChoice) => {
     setUserSelect(choice[userChoice])
-
+    let computerChoice = randomChoice()
+    setComputerSelect(computerChoice);
+  };
+  const randomChoice = () => {
+    let itemArray = Object.keys(choice); // 객체의 키값을 배열값으로 바꿔줌
+    console.log(itemArray)
+    // floor 소수점자리를 버림
+    let randomItem = Math.floor(Math.random()* itemArray.length);
+    let final = itemArray[randomItem]
+    return choice[final];
   }
-
 
   return (
     <div>
       <div className='main'>
-      <Box title="you" item={userSelect} />
-      <Box title="computer" />
+      <Box title="You" item={userSelect} />
+      <Box title="Computer" item={computerSelect} />
       </div> 
       <div className='main'>
         <button onClick={()=>play("scissors")} type="">가위</button>
