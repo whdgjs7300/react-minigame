@@ -18,12 +18,13 @@ const choice = {
   },
 };
 function App() {
+  // UI 변경 State 설정 
   const [userSelect, setUserSelect] = useState(null);
   const [computerSelect, setComputerSelect] = useState(null);
   const [result, setResult] = useState("");
 
 
-
+  // 버튼 핸들링 함수
   const play = (userChoice) => {
     setUserSelect(choice[userChoice]);
     let computerChoice = randomChoice();

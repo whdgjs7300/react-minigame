@@ -21,6 +21,6 @@ const Box = (props) => {
             <img className="item-img" src={props.item && props.item.img} />
             <h2>{result}</h2>
         </div>  );
-  };
+    };
 
 export default Box;
