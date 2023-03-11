@@ -2,6 +2,7 @@ import Box from './components/Box';
 import { useState } from 'react';
 import './App.css';
 
+
 const choice = {
   rock: {
     name: "Rock",
@@ -21,7 +22,8 @@ function App() {
   const [computerSelect, setComputerSelect] = useState(null);
   const [result, setResult] = useState("");
 
-  
+
+
   const play = (userChoice) => {
     setUserSelect(choice[userChoice]);
     let computerChoice = randomChoice();
