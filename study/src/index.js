@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AppClass from './AppClass';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    /** 클래스형 컴포넌트를 사용하기 위해 <AppClass/>를 사용 */
     <App />
   </React.StrictMode>
 );
