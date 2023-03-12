@@ -25,6 +25,15 @@ export default class AppClass extends Component {
             value : this.state.value + 1,
         })
     };
+    // 생성자가 셋팅이 되고 UI가 셋팅이 된 후에 실행됨
+    componentDidMount() {
+        // api 콜
+    }
+    // state가 업데이트 되거나 props값을 받아올 때 실행됨
+    // 최신 업데이트가 된 값으로 무엇을 해주고 싶을 때
+    componentDidUpdate() {
+        
+    }
 
     render() {
         return (
@@ -33,7 +42,7 @@ export default class AppClass extends Component {
                 state : {this.state.counter2}
             </div>
             <button onClick={this.increase}>클릭!</button>
-            <BoxClass num={this.state.value} />
+            {this.state.counter2 < 3 && <BoxClass num={this.state.value} />}
         </div>
         )
     }
