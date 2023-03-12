@@ -1,5 +1,5 @@
 import Box from './components/Box';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 
 
@@ -60,8 +60,15 @@ function App() {
     else if (user.name == "Paper")
       return computer.name == "Rock" ? "win" : "lose";
   };
+  // 인자값을 두개 받음 (첫번째 콜백함수, 두번째 배열 []- 어레이 값은 더 넣을수 있는 특징 !)
+  // api 호출을 많이 사용함
+  useEffect(()=>{
+
+  },[])
+
   return (
     <div>
+      
       <div className="main">
         <Box title="You" item={userSelect} result={result} />
         <Box title="Computer" item={computerSelect} result={result} />

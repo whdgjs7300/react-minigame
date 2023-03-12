@@ -8,7 +8,7 @@ import AppClass from './AppClass';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    /** 클래스형 컴포넌트를 사용하기 위해 <AppClass/>를 사용 */
+    
     <App />
   </React.StrictMode>
 );

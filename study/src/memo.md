@@ -45,8 +45,13 @@ set 함수는 비동기적으로 작동함 (바뀌는데 걸리는시간)
 일반 변수는 재랜더링 될때마다 전부 초기값으로 바뀜
 
 클래스형 컴포넌트 (옛 방식이지만 중요한 것)
+/** 클래스형 컴포넌트를 사용하기 위해 index.js 파일 내에 <AppClass/>를 사용 */
 
 lifecycle 
 1. Mounting : 컴포넌트가 시작될 때
 2. Updating: state가 업데이트 되고 UI가 업데이트 될 때
 3. UnMounting : 컴포넌트가 종료될 때
+
+함수형 컴포넌트 내에서 useEffect() 
+1. 두번 째 인자값 배열이 빈값이면 componentDidMount() 
+2. 배열안에 state 값이 있으면 componentDidUpdate()
