@@ -55,3 +55,4 @@ lifecycle
 함수형 컴포넌트 내에서 useEffect() 
 1. 두번 째 인자값 배열이 빈값이면 componentDidMount() 
 2. 배열안에 state 값이 있으면 componentDidUpdate()
+gg
